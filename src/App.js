@@ -29,11 +29,14 @@ function App() {
   }, [setVenueState]);
 
   const vs = venueState.VenueData;
-
   if (vs) {
     return (
       <div className="App">
-        <Header logo={vs.venue_logo} description={vs.field_venue_description} />
+        <Header
+          logo={vs.venue_logo}
+          description={vs.field_venue_description}
+          name={vs.venue_name}
+        />
         <div className="container">
           <div className="info-column">
             <Venue

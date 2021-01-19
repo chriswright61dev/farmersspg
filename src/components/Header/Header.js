@@ -3,11 +3,11 @@ import "./Header.css";
 import HeaderLogo from "./HeaderLogo";
 import HeaderVenueDescription from "./HeaderVenueDescription";
 
-function Header() {
+function Header(props) {
   return (
     <div className="header">
-      <HeaderLogo />
-      <HeaderVenueDescription />
+      <HeaderLogo logo={props.logo} />
+      <HeaderVenueDescription description={props.description} />
     </div>
   );
 }
