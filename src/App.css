@@ -9,7 +9,8 @@
 }
 
 .container {
-  background-color: rgb(99, 110, 207);
+  background-color: rgb(99, 207, 166);
+  display: flex;
 }
 
 /* mobile first small*/
@@ -45,16 +46,16 @@
 }
 
 /* Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) {
-  .info,
-  .allEvents,
-  .food,
-  .drink {
-    width: 46%;
-    background: rgb(147, 139, 221);
-    margin: 2%;
+@media (min-width: 992px) {
+  .info-column,
+  .events-column,
+  .drinks-column,
+  .food-column {
+    width: 30%;
+    background: rgb(10, 167, 62);
+    margin: 1%;
   }
-} */
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -62,8 +63,8 @@
   .events-column,
   .drinks-column,
   .food-column {
-    width: 30%;
-    background: rgb(10, 167, 62);
+    width: 24%;
+    background: rgb(81, 102, 223);
     margin: 1%;
   }
 }

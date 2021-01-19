@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Venue from "./components/Venue/Venue";
 import Events from "./components/Events/Events";
 import Drinks from "./components/Drinks/Drinks";
+import Foods from "./components/Foods/Foods";
 function App() {
   return (
     <div className="App">
@@ -18,7 +19,9 @@ function App() {
         <div className="drinks-column">
           <Drinks />
         </div>
-        <div className="food-column">food</div>
+        <div className="food-column">
+          <Foods />
+        </div>
       </div>
       <Footer />
     </div>
