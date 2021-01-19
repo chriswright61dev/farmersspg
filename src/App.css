@@ -12,38 +12,20 @@
   background-color: rgb(99, 110, 207);
 }
 
-/* .container > div {
-  background-color: rgb(99, 110, 207);
-}
-
-.info-column {
-  background-color: rgb(255, 200, 90);
-}
-.events-column {
-  background-color: rgb(255, 180, 60);
-}
-.drinks-column {
-  background-color: rgb(255, 160, 30);
-}
-.food-column {
-  background-color: rgb(247, 140, 0);
-} */
-
 /* mobile first small*/
 .info-column,
 .events-column,
 .drinks-column,
 .food-column {
   width: 100%;
-  /* background: blue; */
   margin: 2%;
 }
 
 /* @media (min-width: 576px) {
-  .info,
-  .allEvents,
-  .food,
-  .drink {
+.info-column,
+.events-column,
+.drinks-column,
+.food-column {
     width: 46%;
     background: rgb(238, 215, 12);
     margin: 2%;

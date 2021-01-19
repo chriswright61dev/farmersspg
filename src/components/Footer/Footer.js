@@ -22,7 +22,7 @@ function Footer() {
             email: info@levenshulmepubcompany.co.uk
           </a>
         </p>
-        email
+
         <p>
           <a href="https://twitter.com/LevePubCo">
             Levenshulme Pub Company on twitter
