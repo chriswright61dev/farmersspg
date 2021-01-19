@@ -22,70 +22,45 @@ function App() {
       .then((loadedData) => {
         setVenueState({
           loading: false,
-          theVenueData: loadedData[0],
+          VenueData: loadedData[0],
           // the api returns an array with one object in it
         });
       });
   }, [setVenueState]);
 
-  console.log("venueState", venueState);
+  const vs = venueState.VenueData;
 
-  field_venue_description: "Lounge and Sports Bar"
-  ​​
-  venue_address_1: "254 Burnage Lane"
-  ​​
-  venue_address_2: "Burnage"
-  ​​
-  venue_address_3: "Manchester"
-  ​​
-  venue_email: "farmersburnage@gmail.com"
-  ​​
-  venue_id: "2"
-  ​​
-  venue_image_large_480: "http://levenshulmelife.com/drupal9/sites/default/files/style…ge/public/2021-01/farmers-burnage-exterior.jpg?itok=ZEPzswTb "
-  ​​
-  venue_image_medium_220: "http://levenshulmelife.com/http://levenshulmelife.com//drupal9/sites/default/files/2021-01/farmers-burnage-exterior.jpg"
-  ​​
-  venue_image_original: "http://levenshulmelife.com//drupal9/sites/default/files/2021-01/farmers-burnage-exterior.jpg"
-  ​​
-  venue_image_thumbnail: "http://levenshulmelife.com//drupal9/sites/default/files/styl…il/public/2021-01/farmers-burnage-exterior.jpg?itok=z5_ATBqH"
-  ​​
-  venue_image_wide: "http://levenshulmelife.com/http://levenshulmelife.com//drupal9/sites/default/files/2021-01/farmers-burnage-exterior.jpg"
-  ​​
-  venue_logo: "http://levenshulmelife.com/drupal9/sites/default/files/2021-01/farmers-arms-burnage-logo-white-no-bg.svg"
-  ​​
-  venue_name: "Farmers Arms"
-  ​​
-  venue_postcode: "M19 1EN"
-  ​​
-  venue_telephone: "0161 432 6441"
-
-
-
-
-
-
-
-  return (
-    <div className="App">
-      <Header />
-      <div className="container">
-        <div className="info-column">
-          <Venue />
+  if (vs) {
+    return (
+      <div className="App">
+        <Header logo={vs.venue_logo} description={vs.field_venue_description} />
+        <div className="container">
+          <div className="info-column">
+            <Venue
+              name={vs.venue_name}
+              add1={vs.venue_address_1}
+              add2={vs.venue_address_2}
+              add3={vs.venue_address_3}
+              postcode={vs.venue_postcode}
+              email={vs.venue_email}
+              telephone={vs.venue_telephone}
+              photo={vs.venue_telephone_large_480}
+            />
+          </div>
+          <div className="events-column">
+            <Events />
+          </div>
+          <div className="drinks-column">
+            <Drinks />
+          </div>
+          <div className="food-column">
+            <Foods />
+          </div>
         </div>
-        <div className="events-column">
-          <Events />
-        </div>
-        <div className="drinks-column">
-          <Drinks />
-        </div>
-        <div className="food-column">
-          <Foods />
-        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  );
+    );
+  } else return "loading";
 }
 
 export default App;
