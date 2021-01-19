@@ -1,4 +1,83 @@
-.App {
+.container > div {
+  background-color: antiquewhite;
+}
+.header {
+  background-color: rgb(255, 220, 180);
+}
+info-column {
+  background-color: rgb(255, 200, 90);
+}
+events-column {
+  background-color: rgb(255, 180, 60);
+}
+drinks-column {
+  background-color: rgb(255, 160, 30);
+}
+food-column {
+  background-color: rgb(247, 140, 0);
+}
+footer {
+  background-color: rgb(120, 247, 61);
+}
+
+/* mobile first small*/
+.info,
+.allEvents,
+.food,
+.drink {
+  width: 100%;
+  /* background: blue; */
+  margin: 2%;
+}
+
+/* @media (min-width: 576px) {
+  .info,
+  .allEvents,
+  .food,
+  .drink {
+    width: 46%;
+    background: rgb(238, 215, 12);
+    margin: 2%;
+  }
+} */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .info,
+  .allEvents,
+  .food,
+  .drink {
+    width: 46%;
+    /* background: rgb(99, 204, 122); */
+    margin: 2%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+  .info,
+  .allEvents,
+  .food,
+  .drink {
+    width: 46%;
+    background: rgb(147, 139, 221);
+    margin: 2%;
+  }
+} */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .info,
+  .allEvents,
+  .food,
+  .drink {
+    width: 30%;
+    /* background: rgb(161, 243, 188); */
+    margin: 1%;
+  }
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +114,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
