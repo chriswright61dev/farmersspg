@@ -2,6 +2,8 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Venue from "./components/Venue/Venue";
+import Events from "./components/Events/Events";
+import Drinks from "./components/Drinks/Drinks";
 function App() {
   return (
     <div className="App">
@@ -10,8 +12,12 @@ function App() {
         <div className="info-column">
           <Venue />
         </div>
-        <div className="events-column">events</div>
-        <div className="drinks-column">drinks</div>
+        <div className="events-column">
+          <Events />
+        </div>
+        <div className="drinks-column">
+          <Drinks />
+        </div>
         <div className="food-column">food</div>
       </div>
       <Footer />
