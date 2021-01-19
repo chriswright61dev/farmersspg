@@ -1,0 +1,12 @@
+This appears in the .info-column .venue {
+  background-color: aquamarine;
+}
+
+.venue-info {
+  margin: 1rem;
+}
+
+.venue img {
+  width: 100%;
+  height: auto;
+}
