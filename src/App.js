@@ -47,7 +47,7 @@ function App() {
               postcode={vs.venue_postcode}
               email={vs.venue_email}
               telephone={vs.venue_telephone}
-              photo={vs.venue_telephone_large_480}
+              photo={vs.venue_image_large_480}
             />
           </div>
           <div className="events-column">
