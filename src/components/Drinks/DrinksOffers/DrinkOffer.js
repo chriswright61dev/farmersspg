@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./DrinkOffer.css";
 function DrinkOffer(props) {
   //   console.log("drink offer", props.data);
 

@@ -1,0 +1,40 @@
+.drink_offer {
+  background-color: beige;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  font-size: 16px;
+  height: 9rem;
+  /* padding: 10px; */
+  margin: 2%;
+  text-align: center;
+  width: 29%;
+}
+
+.drink_offer__image {
+  width: 50px;
+  /* background: rgb(44, 190, 235); */
+}
+
+.drink_offer__name {
+  background: var(--box-header-color);
+  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.drink_offer__container {
+  display: flex;
+}
+
+.drink_offer_price {
+  color: var(--price-color);
+  font-size: 20px;
+  font-weight: 600;
+
+  padding-bottom: 0;
+}
+.drink_offer__body {
+  display: flex;
+  flex-direction: column;
+}
