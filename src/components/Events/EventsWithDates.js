@@ -1,7 +1,6 @@
 import React from "react";
 import Event from "./Event";
 function EventsWithDates(props) {
-  console.log("props in ev w dates", props);
   return (
     <div className="events">
       {props.data.map((anEvent) => {

@@ -1,7 +1,16 @@
 import React from "react";
 
-function RegularEvent() {
-  return <div>regular event has no dates</div>;
-}
+function RegularEvent(props) {
+  return (
+    <div className="event">
+      <h4>{props.name}</h4>
+      <div className="event_body">
+        <img src={props.poster} alt={props.name} />
 
+        <p>{props.description} </p>
+        {/* <p>{props.type}</p> */}
+      </div>
+    </div>
+  );
+}
 export default RegularEvent;
