@@ -8,7 +8,8 @@ import Events from "./components/Events/Events";
 import PosterEvents from "./components/Events/PosterEvents";
 import Drinks from "./components/Drinks/Drinks";
 import Foods from "./components/Foods/Foods";
-
+import News from "./components/News/News";
+// import Announcement from "./components/News/Announcement";
 function App() {
   const [venueState, setVenueState] = useState({
     loading: false,
@@ -38,6 +39,7 @@ function App() {
           description={vs.field_venue_description}
           name={vs.venue_name}
         />
+        {/* <Announcement /> */}
         <div className="container">
           <div className="info-column">
             <Venue
@@ -50,6 +52,7 @@ function App() {
               telephone={vs.venue_telephone}
               photo={vs.venue_image_large_480}
             />
+            <News />
           </div>
           <div className="events-column">
             <PosterEvents />

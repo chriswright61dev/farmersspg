@@ -1,0 +1,19 @@
+.news {
+  margin: 1rem;
+}
+
+.news h3 {
+  font-weight: 800;
+  font-size: 16pt;
+  padding-bottom: 2rem;
+  color: var(--alert-color);
+  /* background-color: var(--alert-bg-color); */
+}
+
+.news p {
+  padding-bottom: 1rem;
+}
+
+.news li {
+  padding-bottom: 1rem;
+}

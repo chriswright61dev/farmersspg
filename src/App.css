@@ -11,6 +11,7 @@
 .container {
   background-color: rgb(99, 207, 166);
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* mobile first small*/
@@ -63,7 +64,7 @@
   .events-column,
   .drinks-column,
   .food-column {
-    width: 24%;
+    width: 23%;
     background: rgb(81, 102, 223);
     margin: 1%;
   }

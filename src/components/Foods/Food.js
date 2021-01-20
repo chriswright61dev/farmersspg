@@ -7,8 +7,8 @@ import FoodOptions from "./FoodOptions";
 function Food(props) {
   const theFoodItem = props.data;
 
-  console.log("props", props);
-  console.log("theFoodItem", theFoodItem);
+  // console.log("props", props);
+  // console.log("theFoodItem", theFoodItem);
   return (
     <div className="food_item">
       <FoodItemHeader

@@ -1,18 +1,43 @@
+/* mobile first small*/
+.drink_offer {
+  margin: 2%;
+  width: 29%;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .drink_offer {
+    margin: 2%;
+    width: 29%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .drink_offer {
+    margin: 2%;
+    width: 46%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .drink_offer {
+    margin: 2%;
+    width: 46%;
+  }
+}
+
 .drink_offer {
   background-color: beige;
   border: 1px solid #333333;
   border-radius: 10px;
   font-size: 16px;
   height: 9rem;
-  /* padding: 10px; */
-  margin: 2%;
   text-align: center;
-  width: 29%;
 }
 
 .drink_offer__image {
   width: 50px;
-  /* background: rgb(44, 190, 235); */
 }
 
 .drink_offer__name {
