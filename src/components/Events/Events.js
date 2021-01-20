@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Events.css";
-import Event from "./Event";
-import RegularEvent from "./RegularEvent";
+import EventsWithDates from "./EventsWithDates";
+import RegularEvents from "./RegularEvents";
 function Events() {
   const [eventsState, setEventsState] = useState({
     loading: false,
@@ -21,15 +21,13 @@ function Events() {
 
   const es = eventsState.EventsData;
   if (es) {
-    const regularEventsData = es.filter(
-      (event) => event.event_date === "no_date"
-    );
-    const eventsData = es.filter((event) => event.event_date !== "no_date");
+    const regEvData = es.filter((event) => event.event_date === "no_date");
+    const evData = es.filter((event) => event.event_date !== "no_date");
 
     return (
       <div className="events">
-        <EventsWithDate />
-        <RegularEvents />
+        <EventsWithDates data={regEvData} />
+        <RegularEvents data={evData} />
       </div>
     );
   } else {
