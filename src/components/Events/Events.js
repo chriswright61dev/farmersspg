@@ -26,8 +26,8 @@ function Events() {
 
     return (
       <div className="events">
-        <EventsWithDates data={regEvData} />
-        <RegularEvents data={evData} />
+        <EventsWithDates data={evData} />
+        <RegularEvents data={regEvData} />
       </div>
     );
   } else {
