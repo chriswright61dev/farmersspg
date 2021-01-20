@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Venue from "./components/Venue/Venue";
 import Events from "./components/Events/Events";
+import PosterEvents from "./components/Events/PosterEvents";
 import Drinks from "./components/Drinks/Drinks";
 import Foods from "./components/Foods/Foods";
 
@@ -51,6 +52,7 @@ function App() {
             />
           </div>
           <div className="events-column">
+            <PosterEvents />
             <Events />
           </div>
           <div className="drinks-column">
