@@ -1,0 +1,11 @@
+.food_header {
+  background: var(--box-header-color);
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.food_header h3 {
+  text-align: center;
+  padding: 1rem;
+}
