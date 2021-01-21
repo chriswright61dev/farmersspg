@@ -1,7 +1,7 @@
 import React from "react";
 import "./Venue.css";
 function Venue(props) {
-  console.log("props.photo", props.photo);
+  // console.log("props.photo", props.photo);
   return (
     <div className="venue">
       <img src={props.photo} alt={props.name} />

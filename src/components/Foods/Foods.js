@@ -27,7 +27,7 @@ function Foods() {
       <div className="foodList">
         <FoodHeader />
         {fs.map((food) => {
-          return <Food key={food.id} data={food}></Food>;
+          return <Food key={food.id} data={food} />;
         })}
       </div>
     );

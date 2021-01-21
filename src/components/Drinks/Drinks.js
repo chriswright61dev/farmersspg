@@ -17,16 +17,16 @@ function Drinks() {
         setDrinksState({ loading: false, DrinksData: loadedData });
       });
   }, [setDrinksState]);
-  console.log(drinksState);
+  // console.log(drinksState);
   const ds = drinksState.DrinksData;
   if (ds) {
     // filter out the beer offers - not empty
     let drinksOffersData = ds.filter((drink) => drink.drink_offer_price);
 
     return (
-      <div className="drinks">
-        <DrinksOffers data={drinksOffersData} />
-      </div>
+      // <div className="drinks">
+      <DrinksOffers data={drinksOffersData} />
+      // </div>
     );
   } else {
     return "loading drinks data";

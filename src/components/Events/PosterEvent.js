@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./PosterEvent.css";
 function PosterEvent(props) {
   return (
     <div className="poster-event">

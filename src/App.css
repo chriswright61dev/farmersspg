@@ -9,7 +9,7 @@
 }
 
 .container {
-  background-color: rgb(99, 207, 166);
+  background-color: rgb(141, 202, 218);
   display: flex;
   flex-wrap: wrap;
 }
@@ -41,7 +41,7 @@
   .drinks-column,
   .food-column {
     width: 46%;
-    background: rgb(18, 8, 155);
+    /* background: rgb(18, 8, 155); */
     margin: 2%;
   }
 }
@@ -53,7 +53,7 @@
   .drinks-column,
   .food-column {
     width: 30%;
-    background: rgb(10, 167, 62);
+    /* background: rgb(10, 167, 62); */
     margin: 1%;
   }
 }
@@ -65,7 +65,7 @@
   .drinks-column,
   .food-column {
     width: 23%;
-    background: rgb(81, 102, 223);
+    /* background: rgb(81, 102, 223); */
     margin: 1%;
   }
 }

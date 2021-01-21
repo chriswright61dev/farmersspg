@@ -1,6 +1,7 @@
 /* mobile first small*/
 .drink_offer {
   margin: 2%;
+  margin: 0;
   width: 29%;
 }
 /* Medium devices (tablets, 768px and up) */
@@ -22,7 +23,8 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .drink_offer {
-    margin: 2%;
+    /* margin: 2%; */
+    margin: 0;
     width: 46%;
   }
 }
@@ -34,6 +36,7 @@
   font-size: 16px;
   height: 9rem;
   text-align: center;
+  margin-top: 1.5rem;
 }
 
 .drink_offer__image {

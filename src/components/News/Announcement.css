@@ -1,0 +1,11 @@
+.announcement {
+  background-color: var(--alert-bg-color);
+  text-align: center;
+  padding: 0.5rem;
+
+  font-size: 1.2rem;
+}
+
+.announcement h3 {
+  font-weight: 400;
+}

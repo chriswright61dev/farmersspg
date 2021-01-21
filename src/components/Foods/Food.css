@@ -1,7 +1,7 @@
 .food_item {
   background: rgb(253, 255, 240);
   padding: 10px;
-  margin: 10px;
+  margin-top: 10px;
   border: 1px solid #999999;
   border-radius: 10px;
 }

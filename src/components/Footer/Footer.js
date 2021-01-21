@@ -32,7 +32,7 @@ function Footer() {
 
       <div className="lpc-venue-block">
         <a href="http://www.unionlevenshulme.co.uk/">
-          <h4>The Union</h4>
+          <h4>The Union Inn</h4>
         </a>
         <p>
           845 Stockport Road
@@ -63,7 +63,7 @@ function Footer() {
 
       <div className="lpc-venue-block">
         <a href="http://www.farmersburnage.co.uk/">
-          <h4>Farmers Arms</h4>
+          <h4>The Farmer's Arms</h4>
         </a>
         <p>
           254 Burnage Lane
@@ -93,7 +93,7 @@ function Footer() {
       </div>
       <div className="lpc-venue-block">
         <a href="http://www.hennigansbar.co.uk">
-          <h4>Hennigans Sports Bar</h4>
+          <h4>Hennigan's Sports Bar</h4>
         </a>
         <p>
           908 Stockport Road

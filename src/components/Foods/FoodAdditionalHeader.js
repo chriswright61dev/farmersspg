@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./FoodAdditionalHeader.css";
 function FoodAdditionalHeader(props) {
   return props.description ? (
     <div className="food-additional-header">

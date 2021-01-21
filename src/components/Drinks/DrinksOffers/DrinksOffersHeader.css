@@ -1,0 +1,14 @@
+.drinks_offers_header {
+  text-align: center;
+  width: 100%;
+  background: var(--box-header-color);
+  color: white;
+  padding: 1rem;
+  /* border: 1px solid #333333; */
+  border-radius: 10px;
+  /* margin: 6px;
+  margin-top: 6px; */
+}
+.drinks_offers_header h3 {
+  margin-bottom: 1rem;
+}

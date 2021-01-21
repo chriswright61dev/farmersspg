@@ -1,11 +1,11 @@
 .food-options {
   /* background: rgb(96, 121, 230); */
   margin-left: 10px;
-  padding: 2px;
+  padding: 5px;
 }
 
 .food-suboption {
   /* background: rgb(230, 194, 96); */
   margin-left: 40px;
-  padding: 0px;
+  padding: 2px;
 }

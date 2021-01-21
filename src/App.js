@@ -9,8 +9,24 @@ import PosterEvents from "./components/Events/PosterEvents";
 import Drinks from "./components/Drinks/Drinks";
 import Foods from "./components/Foods/Foods";
 import News from "./components/News/News";
-// import Announcement from "./components/News/Announcement";
+import Announcement from "./components/News/Announcement";
+import Loading from "./components/Loading/Loading";
 function App() {
+  const [newsState, setNewsState] = useState({
+    loading: false,
+    newsData: null,
+  });
+
+  useEffect(() => {
+    setNewsState({ loading: true });
+    const newsApiUrl = "http://levenshulmelife.com/drupal9//news-farmers-api";
+    fetch(newsApiUrl)
+      .then((res) => res.json())
+      .then((loadedData) => {
+        setNewsState({ loading: false, newsData: loadedData });
+      });
+  }, [setNewsState]);
+
   const [venueState, setVenueState] = useState({
     loading: false,
     theVenueData: null,
@@ -31,7 +47,13 @@ function App() {
   }, [setVenueState]);
 
   const vs = venueState.VenueData;
-  if (vs) {
+  const ns = newsState.newsData;
+
+  if (vs && ns) {
+    const announcements = ns.filter((news) => news.field_announcement);
+    const announcement = announcements[0].field_announcement;
+    const newsitems = ns.filter((news) => news.body);
+
     return (
       <div className="App">
         <Header
@@ -39,7 +61,7 @@ function App() {
           description={vs.field_venue_description}
           name={vs.venue_name}
         />
-        {/* <Announcement /> */}
+        <Announcement data={announcement} />
         <div className="container">
           <div className="info-column">
             <Venue
@@ -52,7 +74,7 @@ function App() {
               telephone={vs.venue_telephone}
               photo={vs.venue_image_large_480}
             />
-            <News />
+            <News data={newsitems} />
           </div>
           <div className="events-column">
             <PosterEvents />
@@ -68,7 +90,7 @@ function App() {
         <Footer />
       </div>
     );
-  } else return "loading";
+  } else return <Loading></Loading>;
 }
 
 export default App;

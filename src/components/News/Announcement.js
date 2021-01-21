@@ -1,11 +1,9 @@
 import React from "react";
-
+import "./Announcement.css";
 function Announcement(props) {
   return (
     <div className="announcement">
-      {/* there should only be one announcement
-          - use the first one  */}
-      <h3>{props.data[0].field_announcement}</h3>
+      <h3>{props.data}</h3>
     </div>
   );
 }

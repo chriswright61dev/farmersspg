@@ -1,0 +1,48 @@
+.event {
+  background: white;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.event h4 {
+  background: var(--box-header-color);
+  border-radius: 10px 10px 0 0;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  /* margin-bottom: 1rem; */
+  /* margin-top: 1rem; */
+  padding: 12px;
+  text-align: center;
+}
+
+.event_body {
+  display: flex;
+  width: 100%;
+}
+
+.event_text {
+  width: 50%;
+}
+
+.event_date {
+  font-weight: 600;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.event_image {
+  margin-right: 1rem;
+  /* its a flex so there are other divs to account for */
+  width: 50%;
+}
+
+.event_image img {
+  border-radius: 0px 0px 0 10px;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  /* get rid of the annoying gap */
+  width: 100%;
+}

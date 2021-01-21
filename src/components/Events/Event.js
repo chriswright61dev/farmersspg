@@ -51,13 +51,18 @@ function Event(props) {
     <div className="event">
       <h4>{props.name}</h4>
       <div className="event_body">
-        <img src={props.poster} alt={props.name} />
+        <div className="event_image">
+          <img src={props.poster} alt={props.name} />
+        </div>
 
-        <p>{props.description} </p>
-        <p>
-          {theDateData.dayofweek} {theDateData.daysuffix} {theDateData.month}{" "}
-          {theDateData.ampm}
-        </p>
+        <div className="event_text">
+          <p className="event_date">
+            {theDateData.dayofweek} {theDateData.daysuffix} {theDateData.month}{" "}
+            {theDateData.ampm}
+          </p>
+          <p className="event_description">{props.description} </p>
+        </div>
+
         {/* <p>{props.date} </p> */}
         {/* <p>{props.type}</p> */}
       </div>

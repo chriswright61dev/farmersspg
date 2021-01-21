@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./DrinksOffersHeader.css";
 function DrinksOffersHeader() {
   return (
     <div className="drinks_offers_header">
