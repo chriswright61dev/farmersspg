@@ -1,8 +1,11 @@
 .news {
   margin: 1rem;
-  /* border: 1px 1px 1px 1px solid grey; */
   border-top: 2px solid grey;
   padding-top: 1rem;
+}
+
+.theme_dark .news {
+  color: var(--light-text-color);
 }
 
 .news h3 {
@@ -10,7 +13,6 @@
   font-size: 16pt;
   padding-bottom: 2rem;
   color: var(--alert-color);
-  /* background-color: var(--alert-bg-color); */
 }
 
 .news p {

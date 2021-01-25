@@ -2,7 +2,7 @@ import React from "react";
 import Event from "./Event";
 function EventsWithDates(props) {
   return (
-    <div className="events">
+    <div className="eventsDates">
       {props.data.map((anEvent) => {
         return (
           <Event

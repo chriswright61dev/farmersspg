@@ -1,7 +1,15 @@
 .loading {
   background: rgb(65, 81, 231);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 100vw;
   height: 100vh;
+}
+
+.loading p {
+  font-size: 48px;
+  color: white;
 }

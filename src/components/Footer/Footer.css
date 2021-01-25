@@ -1,3 +1,10 @@
+.theme_dark .footer {
+  color: var(--light-text-color);
+}
+.theme_dark .footer a {
+  color: gold;
+}
+
 .footer {
   display: flex;
   font-size: 16px;

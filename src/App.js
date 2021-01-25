@@ -3,15 +3,23 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+
 import Venue from "./components/Venue/Venue";
+import VenueMap from "./components/VenueMap/VenueMap";
+import VenueStreetView from "./components/VenueMap/VenueStreetView";
+import News from "./components/News/News";
 import Events from "./components/Events/Events";
 import PosterEvents from "./components/Events/PosterEvents";
 import Drinks from "./components/Drinks/Drinks";
 import Foods from "./components/Foods/Foods";
-import News from "./components/News/News";
+
 import Announcement from "./components/News/Announcement";
 import Loading from "./components/Loading/Loading";
 function App() {
+  const [themeState, setThemeState] = useState({
+    themeClass: "theme_dark",
+  });
+
   const [newsState, setNewsState] = useState({
     loading: false,
     newsData: null,
@@ -55,7 +63,7 @@ function App() {
     const newsitems = ns.filter((news) => news.body);
 
     return (
-      <div className="App">
+      <div className={themeState.themeClass}>
         <Header
           logo={vs.venue_logo}
           description={vs.field_venue_description}
@@ -87,6 +95,21 @@ function App() {
             <Foods />
           </div>
         </div>
+        <VenueMap
+          title="Venue Map"
+          src={vs.venue_map_src}
+          width="100%"
+          height="400"
+          frameborder="0"
+        />
+
+        <VenueStreetView
+          title="Venue StreetView"
+          src={vs.venue_streetview_src}
+          width="100%"
+          height="400"
+          frameborder="0"
+        />
         <Footer />
       </div>
     );

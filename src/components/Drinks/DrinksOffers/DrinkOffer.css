@@ -31,12 +31,14 @@
 
 .drink_offer {
   background-color: beige;
-  border: 1px solid #333333;
+  /* border: 1px solid #333333; */
   border-radius: 10px;
   font-size: 16px;
-  height: 9rem;
+  height: 7rem;
   text-align: center;
   margin-top: 1.5rem;
+  -webkit-box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
 .drink_offer__image {
@@ -45,11 +47,11 @@
 
 .drink_offer__name {
   background: var(--box-header-color);
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border-radius: 10px 10px 0 0;
   color: white;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 5px;
 }
 .drink_offer__container {
   display: flex;

@@ -5,7 +5,12 @@ function Footer() {
   return (
     <div className="footer">
       <div className="lpc-venue-block">
-        <h3>Levenshulme Pub Company</h3>
+        <h3>
+          {" "}
+          <a href="http://www.levenshulmepubcompany.co.uk">
+            Levenshulme Pub Company
+          </a>
+        </h3>
         <p>
           Head Office: <br />
           908 Stockport Road,
