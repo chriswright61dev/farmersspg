@@ -6,9 +6,12 @@ function VenueMap(props) {
       <iframe
         title={props.title}
         src={props.src}
-        width={props.width}
-        height={props.height}
-        frameborder={props.frameborder}
+        width="100%"
+        height="400"
+        frameborder="0"
+        // width={props.width}
+        // height={props.height}
+        // frameborder={props.frameborder}
         // style="border:0"
       />
     </div>

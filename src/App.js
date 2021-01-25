@@ -61,7 +61,8 @@ function App() {
     const announcements = ns.filter((news) => news.field_announcement);
     const announcement = announcements[0].field_announcement;
     const newsitems = ns.filter((news) => news.body);
-
+    const mapTitle = vs.venue_name + "Venue Map";
+    const streetviewTitle = vs.venue_name + "Venue Street View";
     return (
       <div className={themeState.themeClass}>
         <Header
@@ -95,20 +96,11 @@ function App() {
             <Foods />
           </div>
         </div>
-        <VenueMap
-          title="Venue Map"
-          src={vs.venue_map_src}
-          width="100%"
-          height="400"
-          frameborder="0"
-        />
+        <VenueMap title={mapTitle} src={vs.venue_map_src} />
 
         <VenueStreetView
-          title="Venue StreetView"
+          title={streetviewTitle}
           src={vs.venue_streetview_src}
-          width="100%"
-          height="400"
-          frameborder="0"
         />
         <Footer />
       </div>
