@@ -12,13 +12,16 @@ import Events from "./components/Events/Events";
 import PosterEvents from "./components/Events/PosterEvents";
 import Drinks from "./components/Drinks/Drinks";
 import Foods from "./components/Foods/Foods";
-
 import Announcement from "./components/News/Announcement";
 import Loading from "./components/Loading/Loading";
+import ToggleSwitch from "./components/ToggleSwitch/ToggleSwitch";
 function App() {
-  const [themeState, setThemeState] = useState({
-    themeClass: "theme_dark",
-  });
+  const [switchValue, setSwitchValue] = useState(false);
+  // this is the switch state
+
+  const [darkThemeState, setDarkThemeState] = useState(false);
+
+  // const [darkTheme, setDarkTheme] = useState(false);
 
   const [newsState, setNewsState] = useState({
     loading: false,
@@ -63,14 +66,27 @@ function App() {
     const newsitems = ns.filter((news) => news.body);
     const mapTitle = vs.venue_name + "Venue Map";
     const streetviewTitle = vs.venue_name + "Venue Street View";
+
+    console.log("switchValue", switchValue);
+    console.log("darkThemeState", darkThemeState);
     return (
-      <div className={themeState.themeClass}>
+      <div className={switchValue ? "theme_dark" : "theme_light"}>
         <Header
           logo={vs.venue_logo}
           description={vs.field_venue_description}
           name={vs.venue_name}
         />
-        <Announcement data={announcement} />
+        <div className="subheader">
+          <Announcement data={announcement} />
+          <ToggleSwitch
+            isOn={switchValue}
+            handleToggle={() => {
+              setSwitchValue(!switchValue);
+              setDarkThemeState(!darkThemeState);
+            }}
+          />
+        </div>
+
         <div className="container">
           <div className="info-column">
             <Venue
