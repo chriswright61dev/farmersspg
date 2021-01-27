@@ -7,6 +7,11 @@
   box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
+.theme_dark .event {
+  background-color: var(--dark-box-bg-color);
+  color: var(--light-text-color);
+}
+
 .event h4 {
   background: var(--box-header-color);
   border-radius: 10px 10px 0 0;

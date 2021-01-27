@@ -4,3 +4,7 @@
   margin-bottom: 0.5rem;
   padding: 5px;
 }
+
+.theme_dark .food-additional-header {
+  color: var(--light-text-color);
+}

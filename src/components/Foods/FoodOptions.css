@@ -9,3 +9,7 @@
   margin-left: 40px;
   padding: 2px;
 }
+
+.theme_dark .food-options {
+  color: var(--light-text-color);
+}

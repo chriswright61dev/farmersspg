@@ -6,6 +6,11 @@
   box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
+.theme_dark .regular_event {
+  background-color: var(--dark-box-bg-color);
+  color: var(--light-text-color);
+}
+
 .regular_event h4 {
   color: rgb(255, 255, 255);
   background: var(--box-header-color);
