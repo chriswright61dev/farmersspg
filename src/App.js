@@ -16,12 +16,10 @@ import Announcement from "./components/News/Announcement";
 import Loading from "./components/Loading/Loading";
 import ToggleSwitch from "./components/ToggleSwitch/ToggleSwitch";
 function App() {
-  const [switchValue, setSwitchValue] = useState(false);
+  const [switchValue, setSwitchValue] = useState(true);
   // this is the switch state
 
-  const [darkThemeState, setDarkThemeState] = useState(false);
-
-  // const [darkTheme, setDarkTheme] = useState(false);
+  const [darkThemeState, setDarkThemeState] = useState(true);
 
   const [newsState, setNewsState] = useState({
     loading: false,
@@ -67,8 +65,8 @@ function App() {
     const mapTitle = vs.venue_name + "Venue Map";
     const streetviewTitle = vs.venue_name + "Venue Street View";
 
-    console.log("switchValue", switchValue);
-    console.log("darkThemeState", darkThemeState);
+    // console.log("switchValue", switchValue);
+    // console.log("darkThemeState", darkThemeState);
     return (
       <div className={switchValue ? "theme_dark" : "theme_light"}>
         <Header

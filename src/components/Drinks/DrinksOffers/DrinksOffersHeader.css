@@ -2,7 +2,7 @@
   text-align: center;
   width: 100%;
   background: var(--box-header-color);
-  color: white;
+  color: var(--light-text-color);
   padding: 1rem;
   /* border: 1px solid #333333; */
   border-radius: 10px;

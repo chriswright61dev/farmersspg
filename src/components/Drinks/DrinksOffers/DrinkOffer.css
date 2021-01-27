@@ -54,7 +54,7 @@
   background: var(--box-header-color);
   /* border-radius: 10px; */
   border-radius: 10px 10px 0 0;
-  color: white;
+  color: var(--light-text-color);
   margin-bottom: 10px;
   padding: 5px;
 }

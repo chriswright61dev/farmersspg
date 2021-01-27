@@ -12,7 +12,7 @@
 }
 
 .regular_event h4 {
-  color: rgb(255, 255, 255);
+  color: var(--light-text-color);
   background: var(--box-header-color);
   margin-top: 1rem;
   margin-bottom: 1rem;
